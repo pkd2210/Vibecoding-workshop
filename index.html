@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Chess vs Computer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Chess vs Computer</h1>
+      <p class="subtitle">You are White. Click a piece, then click a destination square.</p>
+
+      <section class="game">
+        <div id="board" class="board" aria-label="Chess board"></div>
+
+        <aside class="panel">
+          <h2>Status</h2>
+          <p id="status">Your move.</p>
+          <button id="new-game">New Game</button>
+
+          <h3>How to play</h3>
+          <ul>
+            <li>White moves first (you).</li>
+            <li>Legal moves are highlighted when you select a piece.</li>
+            <li>The computer responds with a legal move.</li>
+          </ul>
+        </aside>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chess.js@1.0.0-beta.6/dist/chess.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
